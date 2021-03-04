@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi primer formulario</title>
+    </head>
+    <body>
+        <h1>Reserva de sociedad</h1> <br/>
+        <p>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</p> 
+        <br/>
+        <form method="POST">
+            <fieldset>
+                <legend>Datos del usuario:</legend>
+
+                <label for="id-nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre">
+                <br/>
+                <p>¿Eres socio?</p>
+                <label for="Soy socio">Si, soy socio</label>
+                <input type="radio" name="Socio" id="Soy socio">
+                <label for="No soy socio">No, no soy socio</label>
+                <input type="radio" name="Socio" id="No soy socio">
+                <br/><br/>
+                <label for="correo">Email</label>
+                <input type="text" name="Email" id="correo">
+                <br/><br/>
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" name="Contraseña" id="Contraseña">
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+
+                <select id="Edad" name="edad">
+                    <optgroup label="edad">
+                        <option selected>Mayor de 18</option>
+                        <option>Menor de 18</option>
+                        <option>Mayor de 60</option>
+                    </optgroup>
+                </select>
+
+                <p>Selecciona la fecha y hora de reserva</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+                <label for="Hora">Hora</label>
+                <input type="time" name="hora" id="Hora">
+                <br/><br/>
+                <textarea name="Comentarios">Comentarios</textarea>
+
+            </fieldset>
+            <label for="Condiciones">Acepto las condiciones</label>
+            <input type="checkbox" name="Condiciones" id="Condiciones" required>
+            <br/>
+            <label for="Enviar">Enviar</label>
+            <input type="submit" name="Enviar" id="Enviar">
+
+        </form>
+
+    </body>
+
+</html>
